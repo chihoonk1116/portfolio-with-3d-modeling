@@ -72,4 +72,4 @@ export function Planet(props) {
   )
 }
 
-useGLTF.preload('/models/Planet.glb')
+useGLTF.preload('./models/Planet.glb')
