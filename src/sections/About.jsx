@@ -41,7 +41,10 @@ const About = () => {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       duration: 2,
       ease: "power4.out",
-      scrollTrigger: {trigger: imgRef.current}
+      scrollTrigger: {
+        trigger: imgRef.current,
+        start: "top 50%",
+      }
     })
 
   }, [])

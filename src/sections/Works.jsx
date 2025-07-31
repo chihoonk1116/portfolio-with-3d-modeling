@@ -13,7 +13,7 @@ const Works = () => {
   const previewRef = useRef(null)
   const overlayRef = useRef([])
 
-  const mouse =useRef({x:0, y:0})
+  const mouse = useRef({x:0, y:0})
   const moveX = useRef(null)
   const moveY = useRef(null)
 

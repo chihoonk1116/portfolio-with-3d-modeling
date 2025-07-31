@@ -19,15 +19,16 @@ const Services = () => {
   useGSAP(() => {
     serviceRefs.current.forEach((el) => {
       if (!el) return;
-
       gsap.from(el, {
         y: 200,
+        opacity: 0,
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",
+          start: "top 90%",
         },
         duration: 1,
         ease: "circ.out",
+        stagger: 0.2
       });
     });
   }, []);
